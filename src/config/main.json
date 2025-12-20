@@ -1,0 +1,37 @@
+{
+    "servers" : [
+        {
+        "name": "dev",
+        "fast_api": { "server": "localhost", "port": 8001 },
+        "celery": { "broker_url": "redis://localhost:6379/0", "result_backend": "redis://localhost:6379/0" },
+        "streamlit" : { "server": "localhost", "port": 8002 },
+        "db": { "type": "postgresql", "host": "localhost", "port": 5432, "database": "mydatabase", "user": "user", "password": "password","connection_string":"postgresql://dummy:dummy@localhost:5432/dummy" }
+        
+
+        },
+        
+        {
+        "name": "qa",
+        "fast_api": { "server": "localhost", "port": 8001 },
+        "celery": { "broker_url": "redis://localhost:6379/0", "result_backend": "redis://localhost:6379/0" },
+        "streamlit" : { "server": "localhost", "port": 8002 },
+        "db": { "type": "postgresql", "host": "localhost", "port": 5432, "database": "mydatabase", "user": "user", "password": "password","connection_string":"postgresql://dummy:dummy@localhost:5432/dummy" }
+        },
+        
+        {
+        "name": "uat",
+        "fast_api": { "server": "localhost", "port": 8001 },
+        "celery": { "broker_url": "redis://localhost:6379/0", "result_backend": "redis://localhost:6379/0" },
+        "streamlit" : { "server": "localhost", "port": 8002 },
+        "db": { "type": "postgresql", "host": "localhost", "port": 5432, "database": "mydatabase", "user": "user", "password": "password","connection_string":"postgresql://dummy:dummy@localhost:5432/dummy" }
+        },
+
+        {
+        "name": "prod",
+        "fast_api": { "server": "localhost", "port": 8001 },
+        "celery": { "broker_url": "redis://localhost:6379/0", "result_backend": "redis://localhost:6379/0" },
+        "streamlit" : { "server": "localhost", "port": 8002 },
+        "db": { "type": "postgresql", "host": "localhost", "port": 5432, "database": "mydatabase", "user": "user", "password": "password","connection_string":"postgresql://dummy:dummy@localhost:5432/dummy" }
+        }
+  ]
+}
